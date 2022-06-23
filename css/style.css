@@ -1,0 +1,142 @@
+
+body{
+    background-color: rgb(250, 231, 231);
+}
+
+header{
+    background-color: rgb(161, 0, 0);
+    margin-top: -20px;
+    
+}
+
+#cabecera{
+    background-color:rgb(161, 0, 0);
+    text-align: end;
+    height: 150px;
+}
+
+ul a{
+    color: black;
+}
+
+img{
+    transform: translate(-50px , 50px);
+
+    /*animaciones*/
+
+      animation-name: menu-mover;
+      animation-duration: 1.5s;
+      animation-iteration-count: 1;
+  }
+
+  @keyframes menu-mover{
+      0%{
+          transform: translateX(0);
+      }
+    100%{
+        transform: translateX(50%);
+    }
+}
+
+nav{
+    background-color: red;
+    margin-top: -50px;
+    position: relative;
+}
+
+ nav ul li a{
+    color: black;
+    background-color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+div{
+    text-align: center; 
+}
+
+footer{
+    color:black;
+    background-color: gray;
+    margin-top: 100px;
+    font-family: "DIN Next LT Pro Regular.otf";
+}
+
+#suscribite{
+   font-family: 'Poppins', sans-serif;
+}
+
+#carritoDeCompras{
+   font-family: 'Poppins', sans-serif;
+}
+
+#newIn{
+   font-family: 'Poppins', sans-serif;
+}
+
+#subtitulo{
+   font-family: 'Poppins', sans-serif;
+}
+
+#sale{
+   font-family: 'Poppins', sans-serif;
+}
+
+.container-table{
+    width: 90%;
+    background: white;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 50px;
+}
+
+.table-title{
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    background: rgb(78, 78, 199);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.table-item{
+    padding: 10px;
+}
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 480px) {
+
+    body {
+      background-color:rgb(250, 231, 231)
+    }
+
+    header{
+        background-color: rgb(161, 0, 0);
+        margin-top: -20px;
+    }
+
+    nav{
+        background-color: red;
+        margin-top: -50px;
+        position: relative;
+    }
+
+    footer{
+        color:black;
+        background-color: gray;
+        margin-top: 100px;
+        font-family: "DIN Next LT Pro Regular.otf";
+    }
+
+    #cabecera{
+        background-color:rgb(161, 0, 0);
+        text-align: end;
+        height: 150px;
+    }
+    
+  }

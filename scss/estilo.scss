@@ -1,0 +1,78 @@
+ul{
+    a{
+        color: black;
+    }
+}
+
+/*extend*/
+
+nav{ color: black;
+    background-color: red;
+    text-decoration: none;
+    ul{
+        @extend nav;
+    }
+    li{ 
+        @extend nav;
+    }
+
+    a{  @extend nav;
+    
+      }
+}
+
+/*map/map-get*/
+
+$redes : (
+    instagram:rgb(236, 62, 230),
+    facebook:rgb(51, 51, 234),
+    twitter: rgb(55, 191, 225),
+    whatsapp:rgb(51, 241, 51),
+);
+
+$instragram : map-get($map: $redes, $key:instagram );
+$facebook : map-get($map: $redes , $key: facebook );
+$twitter : map-get($map: $redes , $key:twitter );
+$whatsapp : map-get($map: $redes , $key: whatsapp);
+
+.instagram{
+    color:$instragram;
+}
+
+.facebook{
+    color: $facebook;
+}
+
+.twitter{
+    color: $twitter;
+}
+
+.whatsapp{
+    color: $whatsapp;
+}
+
+/*mixin*/
+
+@mixin fuente() {
+    font-family: 'Poppins', sans-serif;
+}
+
+#suscribite{
+   @include fuente;
+ }
+ 
+ #carritoDeCompras{
+    @include fuente;
+ }
+ 
+ #newIn{
+    @include fuente;
+ }
+ 
+ #subtitulo{
+    @include fuente;
+ }
+ 
+ #sale{
+    @include fuente;
+ }

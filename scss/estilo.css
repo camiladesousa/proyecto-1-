@@ -1,0 +1,22 @@
+ul a {
+  color: black;
+}
+
+nav ul {
+  color: black;
+  background-color: red;
+  text-decoration: none;
+}
+
+nav li {
+  color: black;
+  background-color: red;
+  text-decoration: none;
+}
+
+nav a {
+  color: black;
+  background-color: red;
+  text-decoration: none;
+}
+/*# sourceMappingURL=estilo.css.map */
